@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+  font-family: "Varela";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/VarelaRound/VarelaRoundRegular.ttf") format("truetype"); }
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y; }
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+.owl-carousel .owl-item {
+  float: left; }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+.owl-controls {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move; }
+
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+section {
+  margin: 0;
+  padding: 100px 0; }
+  section h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0; }
+  section .content {
+    margin: 0;
+    overflow: hidden; }
+
+.about {
+  background-color: #fff;
+  border-top: 3px solid #d9d9d9; }
+  .about img {
+    display: block;
+    margin: 30px auto; }
+  .about p {
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    width: 50%; }
+  .about .contact-links {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    text-align: center; }
+    .about .contact-links a {
+      margin: 5px;
+      color: #252A30;
+      -webkit-transition: color .5s ease;
+      transition: color .5s ease; }
+      .about .contact-links a:hover {
+        text-decoration: none; }
+      .about .contact-links a i::before {
+        font-size: 30px; }
+      .about .contact-links a .vk::before {
+        color: #507299; }
+      .about .contact-links a .facebook {
+        color: #3B5998; }
+      .about .contact-links a .linkedin {
+        color: #0077B5; }
+      .about .contact-links a .twitter {
+        color: #1DA1F2; }
+      .about .contact-links a .mail {
+        color: #CCC; }
+
+.skills {
+  background-color: #f0f0f0;
+  border-top: 3px solid #d9d9d9;
+  text-align: center; }
+  .skills .skill {
+    display: inline-block;
+    margin: 30px 100px;
+    vertical-align: top; }
+    .skills .skill h4 {
+      text-align: left;
+      vertical-align: bottom;
+      font-size: 20px;
+      color: #000;
+      border-bottom: 2px solid #000; }
+    .skills .skill ul {
+      padding: 0;
+      list-style-type: none; }
+      .skills .skill ul li {
+        padding: 5px 0px 5px 20px;
+        text-align: left;
+        font-size: 13px;
+        position: relative; }
+        .skills .skill ul li::before {
+          position: absolute;
+          top: 5%;
+          left: 0;
+          font-size: 14px;
+          font-weight: bold; }
+
+.portfolio {
+  background-color: #fff;
+  padding: 150px 0; }
+  .portfolio .portfolio_items .item {
+    white-space: normal;
+    font-family: "Open Sans"; }
+    .portfolio .portfolio_items .item .portfolio-image {
+      text-align: right; }
+      .portfolio .portfolio_items .item .portfolio-image img {
+        width: 200px;
+        height: auto;
+        border: 1px solid #ccc; }
+    .portfolio .portfolio_items .item .portfolio_description {
+      padding-top: 15px;
+      padding-left: 30px; }
+      .portfolio .portfolio_items .item .portfolio_description .title {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 15px; }
+      .portfolio .portfolio_items .item .portfolio_description .zoom, .portfolio .portfolio_items .item .portfolio_description .proof {
+        display: block;
+        font-size: 12.5px;
+        font-weight: bold;
+        color: #555;
+        margin: 5px 0; }
+        .portfolio .portfolio_items .item .portfolio_description .zoom:hover, .portfolio .portfolio_items .item .portfolio_description .proof:hover {
+          text-decoration: none; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+  .about p {
+    width: 80%; }
+  .skills .skill {
+    width: 80%;
+    display: block;
+    padding: 0px 0px 0px 25px;
+    margin: 10px auto; }
+    .skills .skill:first-child {
+      margin-top: 50px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
