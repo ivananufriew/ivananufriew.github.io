@@ -17,4 +17,9 @@ $(function() {
 	});
 
 
+	$('.zoom').magnificPopup({
+		type : 'image'
+	});
+
+
 });
